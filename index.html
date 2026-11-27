@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silver Saw | Handyman in Brandon, FL</title>
+<meta name="description" content="Silver Saw is a family-run handyman and carpenter serving Brandon, Valrico, Riverview, Tampa, Bay Shore and Fishhawk. Call for a free quote.">
+<link rel="canonical" href="https://silversawhandyman.github.io/">
+<meta name="theme-color" content="#0d1b1e">
+<meta property="og:title" content="Silver Saw | Handyman in Brandon, FL">
+<meta property="og:description" content="Family-run handyman and carpentry in Brandon, Valrico and Riverview. Call for a free quote.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://silversawhandyman.github.io/img/bath-after-800.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
+  "name": "Silver Saw",
+  "description": "Family-run handyman and carpentry business serving Brandon, Valrico and Riverview, Florida.",
+  "telephone": "+1-973-914-5922",
+  "url": "https://silversawhandyman.github.io/",
+  "image": "https://silversawhandyman.github.io/img/bath-after-800.webp",
+  "knowsAbout": ["Handyman", "Carpentry"],
+  "areaServed": [
+    {"@type": "City", "name": "Brandon", "containedInPlace": {"@type": "State", "name": "Florida"}},
+    {"@type": "City", "name": "Valrico", "containedInPlace": {"@type": "State", "name": "Florida"}},
+    {"@type": "City", "name": "Riverview", "containedInPlace": {"@type": "State", "name": "Florida"}},
+    {"@type": "City", "name": "Tampa", "containedInPlace": {"@type": "State", "name": "Florida"}},
+    {"@type": "Place", "name": "Bay Shore, Tampa, FL"},
+    {"@type": "Place", "name": "FishHawk, FL"}
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#16201f;
+  --muted:#4d5b59;
+  --bg:#faf8f4;
+  --card:#ffffff;
+  --dark:#0d1b1e;
+  --teal:#0a6c74;
+  --teal-bright:#3fd8de;
+  --line:#e2ddd3;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  padding-bottom:84px; /* room for the sticky call bar */
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--teal)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 18px}
+section{padding:40px 0}
+h1,h2{line-height:1.15;margin:0 0 14px}
+h2{font-size:1.6rem}
+p{margin:0 0 14px}
+
+/* Call buttons */
+.btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  min-height:56px;padding:14px 22px;
+  background:var(--teal-bright);color:#04282b;
+  font-weight:700;font-size:1.2rem;text-decoration:none;
+  border-radius:var(--radius);
+  border:0;cursor:pointer;
+}
+.btn:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+.btn svg{width:22px;height:22px;fill:currentColor}
+
+/* Top */
+.top{background:var(--dark);color:#fff;padding:36px 0 40px}
+.brand{font-size:1rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-bright);font-weight:700;margin:0 0 18px}
+.top h1{font-size:2.1rem;margin-bottom:12px}
+.top p.pitch{font-size:1.15rem;color:#d4e2e0;margin-bottom:24px;max-width:34ch}
+.top .free{margin:12px 0 0;color:#a9bcb9;font-size:.95rem}
+
+/* Services */
+.services ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.services li{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.services strong{display:block;font-size:1.1rem;margin-bottom:2px}
+.services span{color:var(--muted)}
+
+/* Gallery */
+.gallery{background:#f1ede4}
+.pair{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px;margin-bottom:18px}
+.pair h3{margin:2px 0 10px;font-size:1.05rem}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.ba figure{margin:0;position:relative}
+.ba img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:8px;background:#ddd}
+.ba figcaption{
+  position:absolute;left:6px;top:6px;
+  background:rgba(13,27,30,.82);color:#fff;
+  font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:6px;
+}
+.sub{margin:22px 0 10px;font-size:1.1rem}
+
+
+.slider{position:relative}
+.track{display:flex;gap:10px;list-style:none;margin:0;padding:0 0 6px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+.slide{flex:0 0 75%;scroll-snap-align:start}
+.slide img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:#ddd}
+.nav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:44px;height:44px;border-radius:50%;border:0;background:rgba(13,27,30,.85);color:#fff;font-size:1.8rem;line-height:1;cursor:pointer;display:none}
+.prev{left:6px}.next{right:6px}
+@media (min-width:720px){.slide{flex-basis:280px}.nav{display:block}}
+.logo{display:block;width:100%;max-width:230px;height:auto;margin:0 0 14px;border-radius:10px}
+.stars{border:0;padding:0;margin:0;display:flex;gap:14px;flex-wrap:wrap;color:#fff;font-weight:600}
+.stars legend{padding:0;margin-bottom:6px}
+.stars label{display:flex;grid-template-columns:none;align-items:center;gap:6px;font-weight:400}
+.stars input{width:auto}
+.reviews{background:#f1ede4}
+.review{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.review p{margin:0 0 10px}
+.review .tag{display:inline-block;background:#f2b705;color:#2b2200;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:2px 8px;border-radius:6px}
+.review footer{background:none;color:var(--muted);padding:0;text-align:left;font-size:.95rem}
+
+/* Service area */
+.towns{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 16px}
+.towns li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+.zips{color:var(--muted);font-size:.95rem}
+
+/* Contact */
+.contact{background:var(--dark);color:#fff}
+.contact h2{color:#fff}
+.contact p{color:#d4e2e0}
+form{display:grid;gap:14px;margin-top:22px}
+label{display:grid;gap:6px;font-weight:600;color:#fff}
+input,textarea{
+  font:inherit;width:100%;
+  padding:12px 14px;border-radius:10px;border:1px solid #3a4d4b;
+  background:#fff;color:var(--ink);
+}
+textarea{min-height:120px;resize:vertical}
+.form-note{font-size:.9rem;color:#a9bcb9;margin:0}
+.btn.alt{background:#fff;color:var(--dark)}
+
+/* Footer */
+footer{background:#08130f;color:#c9d6d4;padding:24px 0;text-align:center;font-size:.95rem}
+footer a{color:#fff}
+
+/* Sticky call bar (mobile) */
+.callbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:20;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(13,27,30,.96);
+  box-shadow:0 -2px 12px rgba(0,0,0,.25);
+}
+.callbar .btn{min-height:54px}
+
+/* Wider screens */
+@media (min-width:720px){
+  body{font-size:18px;padding-bottom:0}
+  .wrap{padding:0 28px}
+  section{padding:56px 0}
+  .top{padding:56px 0 60px}
+  .top h1{font-size:3rem}
+  .top .btn{display:inline-flex;min-width:300px}
+  .services ul{grid-template-columns:repeat(3,1fr)}
+  .pairs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .pair{margin-bottom:0}
+  form{max-width:560px}
+  /* keep the call button on screen as a floating pill instead of a full bar */
+  .callbar{left:auto;right:20px;bottom:20px;padding:0;background:none;box-shadow:none}
+  .callbar .btn{box-shadow:0 6px 18px rgba(0,0,0,.3);padding:12px 22px;min-height:52px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <img class="logo" src="img/logo.jpeg" width="858" height="286" alt="Silver Saw logo">
+    <p class="brand">Silver Saw</p>
+    <h1>Handyman in Brandon, FL</h1>
+    <p class="pitch">Repairs, carpentry and home projects. Honest work at fair prices.</p>
+    <a class="btn" href="tel:+19739145922" aria-label="Call Silver Saw at 973-914-5922">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      Call (973) 914-5922
+    </a>
+    <p class="free">Free quotes.</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <p>Hi, we're Silver Saw, a family-run handyman and carpentry business based in Brandon. Whether it's a quick repair or a bigger home project, we do honest work at fair prices, with good quality and friendly service. We serve Brandon, Valrico and Riverview, and we're glad to travel farther for larger jobs. Call us for a free quote.</p>
+    </div>
+  </section>
+
+  <!-- TODO: owner to confirm this service list before launch -->
+  <section class="services" id="services" style="padding-top:0">
+    <div class="wrap">
+      <h2>Handyman and carpentry services</h2>
+      <ul>
+        <li><strong>Repairs</strong><span>Quick fixes around the house.</span></li>
+        <li><strong>Small carpentry</strong><span>Small jobs built or fixed by hand.</span></li>
+        <li><strong>Larger home projects</strong><span>Bigger jobs, like bathroom remodels.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="gallery" id="work">
+    <div class="wrap">
+      <h2>Before and after</h2>
+      <div class="pairs">
+        <div class="pair">
+          <h3>Bathroom remodel</h3>
+          <div class="ba">
+            <figure>
+              <img src="img/bath-before-480.webp" srcset="img/bath-before-480.webp 480w, img/bath-before-800.webp 800w" sizes="(min-width:720px) 160px, 45vw" width="480" height="640" loading="lazy" alt="Bathroom before remodel in Brandon, FL, with an older glass-door shower and white vanity">
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <img src="img/bath-after-480.webp" srcset="img/bath-after-480.webp 480w, img/bath-after-800.webp 800w" sizes="(min-width:720px) 160px, 45vw" width="480" height="640" loading="lazy" alt="Bathroom after remodel in Brandon, FL, with green tile shower, marble-look floor and new wood vanity">
+              <figcaption>After</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="pair">
+          <h3>Tub replaced with a walk-in shower</h3>
+          <div class="ba">
+            <figure>
+              <img src="img/shower-before-480.webp" srcset="img/shower-before-480.webp 480w, img/shower-before-800.webp 800w" sizes="(min-width:720px) 160px, 45vw" width="480" height="640" loading="lazy" alt="Bathroom before remodel in Brandon, FL, with a tub, brown tile and granite vanity">
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <img src="img/shower-after-480.webp" srcset="img/shower-after-480.webp 480w, img/shower-after-800.webp 800w" sizes="(min-width:720px) 160px, 45vw" width="480" height="640" loading="lazy" alt="Bathroom after remodel in Brandon, FL, with a glass walk-in shower, patterned tile and wood-look floor">
+              <figcaption>After</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="pair">
+          <h3>New floor and fresh paint</h3>
+          <div class="ba">
+            <figure>
+              <img src="img/vanity-before-480.webp" srcset="img/vanity-before-480.webp 480w, img/vanity-before-800.webp 800w" sizes="(min-width:720px) 160px, 45vw" width="480" height="640" loading="lazy" alt="Bathroom floor and walls before renovation in Brandon, FL">
+              <figcaption>Before</figcaption>
+            </figure>
+            <figure>
+              <img src="img/vanity-after-480.webp" srcset="img/vanity-after-480.webp 480w, img/vanity-after-800.webp 800w" sizes="(min-width:720px) 160px, 45vw" width="480" height="640" loading="lazy" alt="Bathroom after renovation in Brandon, FL, with new dark floor tile and green painted walls">
+              <figcaption>After</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub">More finished work</h3>
+      <div class="slider" aria-label="Photos of finished work">
+        <button class="nav prev" type="button" aria-label="Previous photos">&#8249;</button>
+        <ul class="track" tabindex="0">
+          <li class="slide"><img src="img/s1-480.webp" srcset="img/s1-480.webp 480w, img/s1-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished shower with gray-green tile, pebble floor and glass door in Brandon, FL"></li>
+          <li class="slide"><img src="img/s2-480.webp" srcset="img/s2-480.webp 480w, img/s2-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished bathroom with wood vanity, marble-look floor and glass shower in Brandon, FL"></li>
+          <li class="slide"><img src="img/s3-480.webp" srcset="img/s3-480.webp 480w, img/s3-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Bathroom with wood vanity and gray-green tile shower behind a sliding glass door in Brandon, FL"></li>
+          <li class="slide"><img src="img/s4-480.webp" srcset="img/s4-480.webp 480w, img/s4-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished bathroom with marble-look tile floor and wood vanity in Brandon, FL"></li>
+          <li class="slide"><img src="img/s5-480.webp" srcset="img/s5-480.webp 480w, img/s5-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished bathroom with double vanity and wood-look tile floor in Brandon, FL"></li>
+          <li class="slide"><img src="img/s6-480.webp" srcset="img/s6-480.webp 480w, img/s6-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished bathroom with blue walls, marble-look floor and glass shower in Brandon, FL"></li>
+          <li class="slide"><img src="img/s7-480.webp" srcset="img/s7-480.webp 480w, img/s7-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished shower with patterned tile and black-framed glass door in Brandon, FL"></li>
+          <li class="slide"><img src="img/s8-480.webp" srcset="img/s8-480.webp 480w, img/s8-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished bathroom with wood vanity, lit mirror and wood shelves in Brandon, FL"></li>
+          <li class="slide"><img src="img/s9-480.webp" srcset="img/s9-480.webp 480w, img/s9-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished walk-in shower with patterned tile and square mosaic floor in Brandon, FL"></li>
+          <li class="slide"><img src="img/s10-480.webp" srcset="img/s10-480.webp 480w, img/s10-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished bathroom with dark vanity, accent tile wall and new floor in Brandon, FL"></li>
+          <li class="slide"><img src="img/s11-480.webp" srcset="img/s11-480.webp 480w, img/s11-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Finished walk-in shower with gold fixtures and blue tile in Brandon, FL"></li>
+          <li class="slide"><img src="img/s12-480.webp" srcset="img/s12-480.webp 480w, img/s12-800.webp 800w" sizes="(min-width:720px) 280px, 75vw" width="480" height="640" loading="lazy" alt="Small bathroom with new star-pattern floor tile in Brandon, FL"></li>
+        </ul>
+        <button class="nav next" type="button" aria-label="Next photos">&#8250;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="area">
+    <div class="wrap">
+      <h2>Towns we serve</h2>
+      <ul class="towns">
+        <li>Brandon</li>
+        <li>Valrico</li>
+        <li>Riverview</li>
+        <li>Tampa (Bay Shore)</li>
+        <li>FishHawk</li>
+      </ul>
+      <p>We're also glad to travel a couple of hours for bigger projects.</p>
+      <p class="zips">Zip codes: 33510, 33511, 33527, 33569, 33578, 33594, 33596, 33629 and 33661.</p>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <h2>What customers say</h2>
+      <blockquote class="review">
+        <p>&ldquo;You guys did a great job.&rdquo;</p>
+        <footer>Deen</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Get a free quote</h2>
+      <p>Call, or send a few details and we'll get back to you.</p>
+      <a class="btn alt" href="tel:+19739145922">Call (973) 914-5922</a>
+
+      <!-- Uses the visitor's email app (mailto). Switch to Formspree later: action="https://formspree.io/f/YOUR_FORM_ID" method="post" and drop enctype. -->
+      <form action="mailto:silversawllc@gmail.com?subject=Quote%20request%20from%20website" method="post" enctype="text/plain">
+        <label>Your name
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>Phone number
+          <input type="tel" name="phone" autocomplete="tel" inputmode="tel" required>
+        </label>
+        <label>What do you need done?
+          <textarea name="message" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <p class="form-note">We'll only use this to reply about your job.</p>
+      </form>
+
+      <!-- TODO: add the Google Business Profile link here once verified:
+      <p><a href="GOOGLE_BUSINESS_PROFILE_URL">Find us on Google</a></p> -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Silver Saw &middot; <a href="tel:+19739145922">(973) 914-5922</a>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn" href="tel:+19739145922" aria-label="Call Silver Saw at 973-914-5922">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+    Call now
+  </a>
+</div>
+
+<script>
+document.querySelectorAll('.slider').forEach(function(s){
+  var t=s.querySelector('.track');
+  function go(d){t.scrollBy({left:d*t.clientWidth*0.8,behavior:'smooth'})}
+  s.querySelector('.prev').onclick=function(){go(-1)};
+  s.querySelector('.next').onclick=function(){go(1)};
+});
+</script>
+</body>
+</html>

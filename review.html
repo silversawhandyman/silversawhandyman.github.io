@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Review Silver Saw</title>
+<style>
+body{margin:0;font:18px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#0d1b1e;color:#fff;padding:24px 18px}
+main{max-width:560px;margin:0 auto}
+img{width:100%;max-width:230px;height:auto;border-radius:10px;display:block;margin-bottom:16px}
+h1{margin:0 0 10px;font-size:1.8rem}
+form{display:grid;gap:14px;margin-top:20px}
+label{display:grid;gap:6px;font-weight:600}
+input,textarea,select{font:inherit;width:100%;padding:12px 14px;border-radius:10px;border:1px solid #3a4d4b;background:#fff;color:#16201f}
+textarea{min-height:130px}
+button{min-height:56px;border:0;border-radius:12px;background:#3fd8de;color:#04282b;font:700 1.2rem inherit;cursor:pointer}
+small{color:#a9bcb9}
+</style>
+</head>
+<body>
+<main>
+  <img src="img/logo.jpeg" width="858" height="286" alt="Silver Saw logo">
+  <h1>How did we do?</h1>
+  <p>Thank you for choosing Silver Saw. Tell us how your project went.</p>
+  <!-- Uses the visitor's email app (mailto). Switch to Formspree later: action="https://formspree.io/f/YOUR_FORM_ID" method="post" and drop enctype. -->
+  <form action="mailto:silversawllc@gmail.com?subject=New%20Silver%20Saw%20review" method="post" enctype="text/plain">
+    <label>Your name <input type="text" name="name" autocomplete="name" required></label>
+    <label>Rating
+      <select name="rating" required>
+        <option value="">Choose</option>
+        <option>5 - Great</option><option>4 - Good</option><option>3 - OK</option><option>2 - Poor</option><option>1 - Bad</option>
+      </select>
+    </label>
+    <label>Your review <textarea name="review" required></textarea></label>
+    <button type="submit">Send review</button>
+    <small>This goes only to Silver Saw. It is not posted anywhere.</small>
+  </form>
+</main>
+</body>
+</html>
